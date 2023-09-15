@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #C2151E; /* Cor de fundo do cabeçalho */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px; /* Espaçamento entre os itens do menu */
+}
+
+nav li:first-child {
+    margin-left: 0; /* Não aplicar margem ao primeiro item do menu */
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+nav a:hover {
+    background-color: #555; /* Cor de fundo ao passar o mouse sobre o link */
+}
+
+h1{
+    text-align: left;
+    margin-left: 50px;
+    font-size: 35px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.menu{
+    border: white solid 1px;
+    margin: auto;
+    text-align: right;
+    padding: 10px;
+}
+
+.pdf-list {
+    display: flex;
+}
+.side-by-side {
+    flex: 1;
+    padding: 10px;
+}
+
+.search-bar {
+    margin-top: 70px; /* Altere conforme necessário para posicionar abaixo do cabeçalho */
+    margin-left: 280px;
+    background-color: #f0f0f0; /* Cor de fundo da barra de pesquisa */
+    padding: 10px 20px;
+    width: 245px;
+}
+
+.categorySelect {
+    margin-top: 55px; /* Altere conforme necessário para posicionar abaixo do cabeçalho */
+    margin-left: 20px; /* Adicione margem à esquerda para separar da barra de pesquisa */
+    padding: 10px 20px;
+}
+
+/* Estilo do input da barra de pesquisa */
+.search-bar input {
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+/* Adicionando margem para a barra de pesquisa ficar à direita */
+@media (min-width: 768px) {
+    .categorySelect {
+        margin-left: auto;
+    }
+}
+select[id="categorySelect"] {
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 248px;
+}
+.pdf-embed{
+    width: 190px;
+    height: 325px;
+    padding: 5px;
+    border-radius: 15px;    
+}
+
+@media (max-width: 768px) {
+    /* Estilos para telas menores */
+    .pdf-embed {
+        height: 400px; /* Ajuste a altura conforme necessário */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Estilos para telas ainda menores */
+    .pdf-embed {
+        height: 300px; /* Ajuste a altura conforme necessário */
+    }
+}
+
+.pdf-embed-container{
+    margin-left: 280px;
+    background-color: transparent;
+}
+
+footer {
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-icons img {
+    width: 40px; /* Ajuste conforme necessário */
+    height: auto;
+    margin: 5px; /* Espaçamento entre os ícones */
+}
